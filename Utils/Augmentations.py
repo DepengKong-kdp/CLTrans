@@ -6,7 +6,6 @@ def No_aug(x):
     return x
 
 def jitter(x, sigma=0.1):
-    # https://arxiv.org/pdf/1706.00527.pdf
     return x + np.random.normal(loc=0., scale=sigma, size=x.shape)
 
 def rotation(x):
@@ -58,7 +57,6 @@ def permutation(x, max_segments=5, seg_mode="equal"):
 
 
 def window_slice(x, reduce_ratio=0.9):
-    # https://halshs.archives-ouvertes.fr/halshs-01357973/document
     target_len = np.ceil(reduce_ratio * x.shape[1]).astype(int)
     if target_len >= x.shape[1]:
         return x
@@ -90,7 +88,6 @@ def time_warp(x, sigma=0.2, knot=4):
 
 
 def window_warp(x, window_ratio=0.1, scales=[0.5, 2.]):
-    # https://halshs.archives-ouvertes.fr/halshs-01357973/document
     warp_scales = np.random.choice(scales, x.shape[0])
     warp_size = np.ceil(window_ratio * x.shape[1]).astype(int)
     window_steps = np.arange(warp_size)
