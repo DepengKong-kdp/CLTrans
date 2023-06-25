@@ -1,6 +1,6 @@
 # (CLTrans) Self-Supervised Knowledge Mining from Unlabeled Data for Bearing Fault Diagnosis under Limited Annotations.
 This is a PyTorch implementation of the paper entitled "Self-Supervised Knowledge Mining from Unlabeled Data for Bearing Fault Diagnosis under Limited Annotations".\
-![CLTrans Framework](https://github.com/yg-ai-group/CLTrans/blob/main/results/fig1.png)
+![CLTrans Framework](https://github.com/DepengKong-kdp/CLTrans/blob/main/results/fig1.png)
 
 ## Preparation
 The following dependencies have been used in our implementation and validated as feasible.
